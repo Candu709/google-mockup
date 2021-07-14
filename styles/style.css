@@ -1,15 +1,9 @@
-body { 
-    background: white;
-    margin: 0 auto;
+html {
+  background: white;
 }
-
 footer {
-    background: #f2f2f2;
+  background: #f2f2f2;
 }
-.logo {
-    display: block;
-    margin: 0 auto;
-}
-.test {
-    background: violet;
+#location {
+  border-bottom: 1px solid #dadce0;
 }
