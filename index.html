@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <header class="flex-row">
+  <header class="flex-row head-nav">
     <div>    
       <a href="#">About Us</a>    
       <a href="#">Google Store</a>
@@ -22,7 +22,7 @@
         <!-- title will be replaced with a css tooltip later on -->
         <span class="material-icons-round">apps</span>
       </nav>
-      <a class="btn btn--blue" href="#">Sign in</a>
+      <a class="btn btn--primary" href="#">Sign in</a>
     </div> 
   </header>
 
@@ -31,7 +31,8 @@
     <form action="#">
       <div class="searchbar">
       <span class="material-icons-round">search</span>
-        <input id="searchbox" type="text" placeholder="">
+        <input id="searchbox" type="text" required placeholder="">
+        <!-- error message for empty field needs to be removed-->
         <span class="material-icons-round" title="Search by voice">mic</span> 
       </div>
       <!-- title will be replaced with a css tooltip later on -->
@@ -41,8 +42,9 @@
   </main>
 
   <footer>
-    <div class="location__border">Your location</div>
-    <nav class="flex-row">
+    <div class="location">Italy</div>
+    <br>
+    <nav class="flex-row foot-nav">
       <div>
         <a href="#">Advertising</a>
         <a href="#">Business</a>

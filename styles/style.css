@@ -1,7 +1,17 @@
-/* prob needs to move into reset.css */
+/* prob needs to be a reset.css */
 body, html {
+  /* margin & padding */
   margin: 0px;
+  padding: 0px;
   border: none;
+  /* font */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  font-size: smaller;
+  line-height: normal;
+  font-stretch: normal;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* whole page */
@@ -27,14 +37,20 @@ html, body {
   padding: 1em;
   border: none;
   border-radius: 5px;
+  background-color: hsl(200, 15%, 97%);
+  margin: 1em;
 }
 
-.btn--blue {
+.btn--primary {
   background-color: hsl(215, 80%, 50%);
+  color: white;
 }
 
+.location {
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.15);
+}
 /* Flex attributes */
-header {
+.head-nav {
   justify-content: space-between;
   flex-wrap: nowrap;
 }
@@ -43,6 +59,7 @@ footer {
   background: hsl(0, 0%, 95%);
 }
 
-.location__border {
-  border-bottom: 1px solid hsla(0, 0, 0, .15);
+.foot-nav {
+  flex-direction: row;
+  flex-wrap: wrap;
 }
