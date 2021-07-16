@@ -1,47 +1,48 @@
+/* prob needs to move into reset.css */
 body, html {
-  height: 100vh;
-  min-width: 500px;
-  border: none;
   margin: 0px;
-  background: white;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-}
-a {
-  margin: 1em;  
-}
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  text-align: center;
-  align-content: center;
-}
-main {
-  display: flex;
-  flex-flow: column;
-  align-content: space-between;
-  align-items: center;
-}
-footer>nav {
-  display: flex;
-  flex-direction: row;
-}  
-footer {
-  background: #f2f2f2;
+  border: none;
 }
 
-#location {
-  border-bottom: 1px solid #dadce0;
+/* whole page */
+html, body {
+  height: 100vh;
+  min-width: 500px;
+  background: white;
 }
-.buttons {
+
+.flex-col {
+  display: flex;
+  flex-flow: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row;
+}
+
+/* Buttons */
+.btn {
   text-align: center;
-  padding: 0.5em 1em;
+  padding: 1em;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
 }
-.buttons_login  {
-  background-color: #1a73e8;
+
+.btn--blue {
+  background-color: hsl(215, 80%, 50%);
+}
+
+/* Flex attributes */
+header {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+footer {
+  background: hsl(0, 0%, 95%);
+}
+
+.location__border {
+  border-bottom: 1px solid hsla(0, 0, 0, .15);
 }

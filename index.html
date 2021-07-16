@@ -1,51 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Homepage Clone</title>
   <link rel="stylesheet" href="styles/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
 <body>
-  <header>
+
+  <header class="flex-row">
     <div>    
       <a href="#">About Us</a>    
       <a href="#">Google Store</a>
     </div>
-    <div>
+    <div class="flex-row">
       <a href="#">Gmail</a>
       <a href="#">Images</a>
       <nav title="Google Apps" aria-labelledby="Google Apps">
         <!-- title will be replaced with a css tooltip later on -->
         <span class="material-icons-round">apps</span>
       </nav>
-      <a class= " buttons buttons_login" href="#">Sign in</a>
+      <a class="btn btn--blue" href="#">Sign in</a>
     </div> 
   </header>
-  <div class="a b"></div>
-  <main>
+
+  <main class="flex-col">
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="272px" alt="Google">
     <form action="#">
       <div class="searchbar">
       <span class="material-icons-round">search</span>
-
         <input id="searchbox" type="text" placeholder="">
         <span class="material-icons-round" title="Search by voice">mic</span> 
       </div>
       <!-- title will be replaced with a css tooltip later on -->
-      <button class="buttons" id="search "> Google Search</button>
-      <button class="buttons" id="lucky"> I'm Feeling Lucky</button>
+      <button class="btn" id="search "> Google Search</button>
+      <button class="btn" id="lucky"> I'm Feeling Lucky</button>
     </form>
   </main>
-  
+
   <footer>
-    <div id="location">Your location</div>
-    <nav>
-      <div class="left">
+    <div class="location__border">Your location</div>
+    <nav class="flex-row">
+      <div>
         <a href="#">Advertising</a>
         <a href="#">Business</a>
         <a href="#">How Search Works</a>
       </div>
-      <a href="#" class="center">
+      <a href="#">
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt="">
         <span>Carbon free since 2007</span>
       </a>
@@ -54,5 +57,6 @@
       <a href="#">Settings</a>
     </nav>
   </footer>
+
 </body>
 </html>
