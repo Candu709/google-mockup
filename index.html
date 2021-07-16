@@ -7,60 +7,51 @@
 </head>
 <body>
   <header>
-    <div class="head_left">    
+    <div>    
       <a href="#">About Us</a>    
       <a href="#">Google Store</a>
     </div>
-    <div class="head_right">
+    <div>
       <a href="#">Gmail</a>
       <a href="#">Images</a>
-      <button id="apps" title="Google Apps"> <!-- title should be replaced with a css tooltip -->
-        <nav aria-labelledby="Google Apps">
-          <span class="material-icons-round">apps</span>
-        </nav>
-      </button>
-      <a href="#">
-        <div class="button">Sign in</div>
-      </a>
+      <nav title="Google Apps" aria-labelledby="Google Apps">
+        <!-- title will be replaced with a css tooltip later on -->
+        <span class="material-icons-round">apps</span>
+      </nav>
+      <a class= " buttons buttons_login" href="#">Sign in</a>
     </div> 
   </header>
-  
+  <div class="a b"></div>
   <main>
-    <div>
-      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
-      <form action="#">
-        <div class="searchbar">
-          <span class="material-icons-round">search</span>
-          <input id="searchbox" type="text" placeholder="">
-          <span class="material-icons-round" title="Search by voice">mic</span> <!-- title should be replaced with a css tooltip -->
-        </div>
-        <button id="search "> Google Search</button>
-        <button id="lucky"> I'm Feeling Lucky</button>
-      </form>
-    </div>
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="272px" alt="Google">
+    <form action="#">
+      <div class="searchbar">
+      <span class="material-icons-round">search</span>
+
+        <input id="searchbox" type="text" placeholder="">
+        <span class="material-icons-round" title="Search by voice">mic</span> 
+      </div>
+      <!-- title will be replaced with a css tooltip later on -->
+      <button class="buttons" id="search "> Google Search</button>
+      <button class="buttons" id="lucky"> I'm Feeling Lucky</button>
+    </form>
   </main>
   
   <footer>
     <div id="location">Your location</div>
     <nav>
-      <a href="#" class="foot_left">
-        <div>Advertising</div>
+      <div class="left">
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
+        <a href="#">How Search Works</a>
+      </div>
+      <a href="#" class="center">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt="">
+        <span>Carbon free since 2007</span>
       </a>
-      <a href="#" class="foot_left">
-        <div>Business</div>
-      </a>
-      <a href="#" class="foot_left">
-        <div>How Search Works</div>
-      </a>
-      <a href="#" class="foot_center">
-        <div> <!-- some weirdness due to it being a link in a div, maybe fix with <style> a{display=block}-->
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt="">
-          <span>Carbon free since 2007</span>
-        </div>
-      </a>
-      <a href="#" class="foot_right">Privacy</a>
-      <a href="#" class="foot_right">Terms</a>
-      <a href="#" class="foot_right">Settings</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Settings</a>
     </nav>
   </footer>
 </body>
