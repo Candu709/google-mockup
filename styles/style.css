@@ -8,7 +8,7 @@ body, html {
   font-style: normal;
   font-variant: normal;
   font-weight: lighter;
-  font-size: smaller;
+  font-size: medium;
   line-height: normal;
   font-stretch: normal;
   font-family: Helvetica, Arial, sans-serif;
@@ -16,50 +16,80 @@ body, html {
 
 /* whole page */
 html, body {
-  height: 100vh;
-  min-width: 500px;
   background: white;
-}
-
-.flex-col {
   display: flex;
   flex-flow: column;
+  align-items: center;
+  justify-content: center;
+/* Variables */
+  /* Color Palette */
+--clr-darker-03: hsla(0, 0%, 0%, 0.03);
+--clr-darker-05: hsla(0, 0%, 0%, 0.05);
+--grey1: hsl(200, 15%, 97%);
+--grey2: hsl(200, 15%, 85%);
+--grey3: hsl(200, 15%, 65%);
+--blue1: hsl(215, 80%, 50%);
 }
 
-.flex-row {
-  display: flex;
-  flex-flow: row;
+.material-icons-sharp {
+  user-select: none;
+  flex: none;
+  margin: 1rem;
 }
-
 /* Buttons */
 .btn {
+  display:block;
   text-align: center;
-  padding: 1em;
-  border: none;
+  padding: 0.5em;
+  border: 1px solid transparent;
   border-radius: 5px;
-  background-color: hsl(200, 15%, 97%);
-  margin: 1em;
+  background-color: var(--clr-darker-03);
+  margin:  1em;
+}
+
+.search {
+  width: 100%;
+  color: var(--grey3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search__bar {
+  height: 3em;
+  max-width: 87vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border:1px solid var(--grey2);
+  border-radius: 2em;
+  padding: 0;
+}
+.search__bar:focus-within, .search__bar:hover {
+  box-shadow: 0 0 5px lightgrey;
+}
+
+.search__bar--input {
+  font-size: medium;
+  align-self: stretch;
+  flex: 1 1 auto;
+  width: 50ch;
+  border: none;
+  outline: none;
 }
 
 .btn--primary {
-  background-color: hsl(215, 80%, 50%);
+  background-color: var(--blue1);
   color: white;
 }
 
 .location {
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.15);
-}
-/* Flex attributes */
-.head-nav {
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  border-bottom: 1px solid var(--clr-darker-05);
 }
 
-footer {
-  background: hsl(0, 0%, 95%);
-}
-
-.foot-nav {
-  flex-direction: row;
-  flex-wrap: wrap;
+.foot {
+  background-color: lightgrey;
+  background-color: var(--clr-darker-05);
 }
