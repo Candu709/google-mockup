@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Google Homepage Clone</title>
-  <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>  
   <header>
@@ -24,32 +24,31 @@
       <a class="btn btn--primary" href="">Sign in</a>
     </div> 
   </header>
+  
   <main>
-    <form action="" class="search">
-      <!-- ??? does this not need the alt since its a logo? -->
-      <!-- ??? does it need it since its the main image of the page?--> 
       <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" height="92px" width="272px" alt="Google">
+    <!-- ??? does this not need the alt since its a logo or does it need it since its the main image of the page?--> 
+    <form action="" class="search">
       <div class="search__bar">
-        <!-- ??? would this work for accessibility? -->
-        <label for="googitgle-search" class="material-icons-sharp">search</label>
-        <!-- ??? input is not required if empty if lucky btn still works? -->
+        <!-- ??? Does this spell out "search" on a screen reader? Should I get a screen reader for testing or is the chrome accessibility lightouse test in the devs tool enough? -->
+        <label for="google-search" class="material-icons-sharp search__bar--icon" >search</label>
+        <!-- ??? If the "I'm Feeling Lucky" still works when the <input> is empty <input required="required">? -->
         <input class="search__bar--input" type="search" id="google-search" placeholder=" " autofocus>
-        <!-- ??? is voice search still type="search"? "file" audio? -->
         <!-- cant find colored icon from google licensed sites -->
         <!-- title will be replaced with a css tooltip later on -->
-        <input class="material-icons-sharp" for="google-voice-search" title="Search by voice">mic</span> 
-      </div>
-      <div class="search__btns--row">
+        <!-- I am assuming this button does "stuff" in the overlay it shows, and the result of that "stuff" gets pasted into the input and submitted-->
+        <button class="material-icons-sharp search__bar--icon btn btn--voice-search" title="Search by voice">mic</button> 
+      </div>      
+      <div class="search__btn--row">
         <button class="btn"> Google Search</button>
         <button class="btn"> I'm Feeling Lucky</button>
       </div>
     </form>
+    <div class="localization">Google offered in: <a href="">Italiano</a></div>
   </main>
   
-  <footer class="foot">
-    <!-- ??? is there a geographic location HTML element? -->
-    <!-- ??? gogle returns olny JS geolocation stuff, -->
-    <!-- ??? so im assuming its something i will encounter later on -->
+  <footer>
+    <!-- ??? is there a geographic location HTML element? seaching returns olny JS geolocation stuff so im assuming its something i will encounter later on -->
     <div class="location">Italy</div>
     <br>
     <nav class="foot__nav">
