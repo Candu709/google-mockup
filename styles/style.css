@@ -114,6 +114,15 @@ body {
 }
 
 footer {
-  background-color: lightgrey;
-  background-color: var(--clr-darker-05);
+  background-color: var(--clr-darker-10), lightgrey, red;
+  padding: 1em;
+}
+.foot__nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.foot__a {
+  color: var(--color-text);
+  
 }
