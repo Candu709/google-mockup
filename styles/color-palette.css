@@ -1,0 +1,15 @@
+html {
+    /* Color Palette */
+    --color__text: hsl(0, 0%, 25%);
+    --color__btn__background: hsl(0, 0%, 97%);
+    --color__btn-primary: white;
+    --color__btn-primary__background: hsl(215, 80%, 55%);
+    --color__btn-primary__background--hover: hsl(215, 80%, 60%);
+    --color__btn-primary__background--active: hsl(215, 80%, 65%);
+    --clr-darker-05: hsla(0, 0%, 0%, 0.05);
+    --clr-darker-10: hsla(0, 0%, 0%, 0.10);
+    --grey1: hsl(200, 15%, 97%);
+    --grey2: hsl(200, 15%, 85%);
+    --grey3: hsl(200, 15%, 65%);
+    --color__footer--text: hsl(0, 0%, 0%, 60%);
+}
