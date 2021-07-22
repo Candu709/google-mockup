@@ -4,7 +4,6 @@ body, html {
   margin: 0px;
   padding: 0px;
   border: none;
-  box-sizing: border-box;
   /* font */
   font-style: normal;
   font-variant: normal;
@@ -163,12 +162,18 @@ footer {
   background-color: lightgrey;
   background-color: var(--clr-darker-10);
 }
+
+.location {
+  padding: 1em 2em;
+  border-bottom: 1px solid var(--clr-darker-10);
+}
+
 .foot__nav {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 1.5em;
+  margin: 0px 1rem;
+  justify-content: space-between;
 }
 
 .foot__a {
@@ -176,30 +181,49 @@ footer {
   color: inherit;
   text-decoration: none;
   padding: 1em;
+  display: block;
+  white-space: nowrap;
+  text-align: center;
 }
 .foot__a:hover {
   text-decoration: underline;
 }
 
-.foot__eco {
+.foot__nav--business, .foot__nav--legal {
+  /* set as the widest of the row in rem*/
+  min-width: 22rem;
   display: flex;
   flex-flow: row nowrap;
-  align-items: baseline;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.foot__nav--legal{
+  justify-content: flex-end;
+}
+
+.foot__eco {
+  margin: 0 auto;
 }
 
 .foot__eco--img{
-height: 100%;
-width: auto;
+  height: 1em;
+  width: auto;
+  margin-right: 1ch;
 }
 
-.foot__eco--text {
-  margin-left: 1ch;
-}
-
-.location {
-  padding: 1em 2em;
-  border-bottom: 1px solid var(--clr-darker-10);
+/* max-width is widest times number of elements */
+@media screen and (max-width: 66rem) {
+  .foot__eco {
+    order: -1;
+    width: 100vw;
+  }
+  .foot__nav--legal, .foot__nav--business {
+    min-width: max-content;
+  }
+  .foot__nav {
+    justify-content: space-around;
+  }
 }
 
 .btn--primary {
