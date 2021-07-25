@@ -1,19 +1,6 @@
 html {
-  /* Color Palette */
-    --color__text: hsl(0, 0%, 25%);
-    --btn--color: black;
-    --btn--primary--color: white;
-    --btn--primary--background-color: hsl(215, 80%, 55%);
-    --btn--primary--background-color__hover: hsl(215, 80%, 60%);
-    --color__btn-primary__background--active: hsl(215, 80%, 65%);
-    --clr-darker-05: hsla(0, 0%, 0%, 0.05);
-    --clr-darker-10: hsla(0, 0%, 0%, 0.10);
-    --grey1: hsl(200, 15%, 97%);
-    --grey2: hsl(200, 15%, 85%);
-    --grey3: hsl(200, 15%, 65%);
-    --color__footer--text: hsl(0, 0%, 0%, 60%);
     background: white;
-    color: black;
+    color: #333;
     font-style: normal;
     font-variant: normal;
     font-weight: lighter;
@@ -36,7 +23,7 @@ html {
   cursor: pointer;
 }
 
-.btn--voice-search {
+.search__voice-search {
   margin: 0;
   padding: 0;
   background-color: inherit;
@@ -58,7 +45,6 @@ html {
 /* Icons */
 .material-icons-sharp {
   color: inherit;
-  font-size: larger;
   user-select: none;
   display: inherit;
 }
