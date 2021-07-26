@@ -9,18 +9,21 @@
   <link rel="stylesheet" href="styles/assets.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-  <header>
-    <div>
-      <a class="head__link" href="">About Us</a>
-      <a class="head__link" href="">Google Store</a>
-    </div>
-    <nav class="head__nav">
-      <a class="head__link" href="">Gmail</a>
-      <a class="head__link" href="">Images</a>
+  <header class="l-flex-row">
+    <nav class="l-flex-row">
+      <a class="m-header" href="">Google Store</a>
+      <a class="m-header" href="">About Us</a>
+    </nav>
+    <nav class="l-flex-row">
+      <a class="m-header" href="">Gmail</a>
+      <a class="m-header" href="">Images</a>
       <!-- title will be replaced with a css tooltip later on -->
-      <nav class="material-icons-sharp head__apps" title="Google Apps">apps</nav>
-      <button class="btn btn--primary head__btn">Sign in</button>
+      <nav class="m-header m-apps" title="Google Apps">
+        <span class="material-icons-sharp">apps</span>
+      </nav>
+      <button class="m-header btn btn--primary head__btn">Sign in</button>
     </nav>
   </header>
 
