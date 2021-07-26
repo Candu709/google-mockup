@@ -22,14 +22,6 @@ html {
   white-space: nowrap;
   cursor: pointer;
 }
-
-.search__voice-search {
-  margin: 0;
-  padding: 0;
-  background-color: inherit;
-  color: inherit;
-}
-
 .btn--primary {
   background-color: hsl(215, 80%, 55%);
   color: white;
@@ -41,10 +33,21 @@ html {
 .btn--primary:active, .btn--primary:focus {
   background-color: hsl(215, 80%, 65%);
 }
-
 /* Icons */
 .material-icons-sharp {
   color: inherit;
+  font-size: inherit;
   user-select: none;
   display: inherit;
+}
+.search__icon {
+  font-size: larger;
+  padding: 0.5rem 0;
+}
+.search__voice-search {
+  margin: 0;
+  padding: 0.5rem 0;
+  background-color: inherit;
+  color: inherit;
+  font-size: x-large;
 }
