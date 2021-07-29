@@ -3,7 +3,6 @@ html {
   padding: 0px;
   border: none;
 }
-
 body {
   margin: 0px;
   padding: 0px;
@@ -14,24 +13,26 @@ body {
   justify-content: space-between;
   white-space: nowrap;
 }
-
 header {
   font-size: small;
   margin: 0.5rem 1rem;
   white-space: normal;
 }
-
 .l-flex-row {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
-
+.l-flex-col {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
 .m-header {
   margin: 0 0.5rem;
 }
-
 a.m-header, a.m-footer {
   text-decoration: none;
 }
@@ -41,7 +42,6 @@ a.m-header:hover , a.m-footer:hover {
 a.m-header:visited , a.m-footer:visited {
   color: inherit;
 }
-
 .m-apps {
   color: #666;
   padding: 0.5em;
@@ -58,48 +58,33 @@ a.m-header:visited , a.m-footer:visited {
   background-color:hsl(0, 0%, 90%);
   border-radius: 50%;
 }
-
-main , .search {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  margin: 1em;
-}
-
-.search__bar {
-  margin: 1em;
-  padding: 0 1em;
+.m-searchbar {
+  margin: 1rem;
+  padding: 0 1rem;
   max-width: 87vw;
-  color: #9ba0a5;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #999;
   border:1px solid #d7d7d7;
   /* radius formula = iconHeight/2 + iconPadding + borderWidth */
-  border-radius: 2rem;
+  border-radius: 2.1rem;
   border-radius: calc(1.5rem/2 + 0.5rem + 1px);
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
 }
-.search__bar:focus-within, .search__bar:hover {
+.m-searchbar:focus-within, .m-searchbar:hover {
   box-shadow: 0 0 5px lightgrey;
 }
-
-.search__bar--input {
-  font-size: inherit;
-  background-color: inherit;
-  margin: 5px 0 5px 1em;
+.m-searchbar__input {
+  margin: 5px 0 5px 1rem;
   padding: 0;
+  background-color: transparent;
+  font-size: inherit;
   align-self: stretch;
   flex: 1 1 auto;
-  width: 50ch;
+  width: 54ch;
   border: none;
   outline: none;
 }
-
-.search__btn--row {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+.m-conditionals {
+  margin: 1rem;
 }
 
 footer {
