@@ -139,24 +139,26 @@ footer {
 }
 
 
-/* helpers .h-[class-name] */
+/* helpers .h-[target]-[class-name] */
 
 .h-flex-wrap{
   flex-wrap: wrap;
 }
+
 .h-margin-orizontal{
   margin: 0 0.5rem;
 }
+
 .h-text-wrap{
   white-space: normal;
 }
 
-.h-no-text-decoration,
-.h-no-text-decoration:visited {
+.h-text-no-decoration,
+.h-text-no-decoration:visited {
   color: inherit;
   text-decoration: none;
 }
-.h-no-text-decoration:hover {
+.h-text-no-decoration:hover {
   text-decoration: underline;
 }
 
