@@ -32,6 +32,13 @@ body {
   flex-wrap: wrap;
 }
 
+.h-margin-orizontal{
+  margin: 0 0.5rem;
+}
+.h-text-wrap{
+  white-space: normal;
+}
+
 .h-no-text-decoration,
 .h-no-text-decoration:visited {
   color: inherit;
@@ -44,11 +51,6 @@ body {
 header {
   font-size: small;
   margin: 0.5rem 1rem;
-  white-space: normal;
-}
-
-.m-header__element {
-  margin: 0 0.5rem;
   white-space: normal;
 }
 
@@ -68,6 +70,7 @@ header {
   background-color:hsl(0, 0%, 90%);
   border-radius: 50%;
 }
+
 .m-searchbar {
   margin: 1rem 0;
   padding: 0 1rem;
@@ -93,6 +96,7 @@ header {
   border: none;
   outline: none;
 }
+
 .m-conditionals {
   margin: 1rem;
 }
