@@ -13,63 +13,67 @@
 <body>
   <header class="l-flex-row">
     <nav class="l-flex-row">
-      <a class="m-header" href="">Google Store</a>
-      <a class="m-header" href="">About Us</a>
+      <a class="h-margin-orizontal h-text-wrap h-text-no-decoration" href="">About Us</a>
+      <a class="h-margin-orizontal h-text-wrap h-text-no-decoration" href="">Google Store</a>
     </nav>
     <nav class="l-flex-row">
-      <a class="m-header" href="">Gmail</a>
-      <a class="m-header" href="">Images</a>
+      <a class="h-margin-orizontal h-text-no-decoration" href="">Gmail </a>
+      <a class="h-margin-orizontal h-text-no-decoration" href="">Images</a>
       <!-- title will be replaced with a css tooltip later on -->
-      <nav class="m-header m-apps" title="Google Apps">
+      <nav class="h-margin-orizontal m-apps" title="Google Apps">
         <span class="material-icons-sharp">apps</span>
       </nav>
-      <button class="m-header btn btn--primary head__btn">Sign in</button>
+      <button class="h-margin-orizontal m-btn m-btn--primary">Sign in</button>
     </nav>
   </header>
 
-  <main>
+  <main class="l-flex-col">
     <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" height="92px" width="272px" alt="Google">
     <!-- ??? does this not need the alt since its a logo or does it need it since its the main image of the page?-->
-    <form action="" class="search">
-      <div class="search__bar">
+    <form action="" class="l-flex-col">
+      <div class="l-flex-row m-searchbar">
         <!-- ??? Does this spell out "search" on a screen reader? Should I get a screen reader for testing or is the chrome accessibility lightouse test in the devs tool enough? -->
-        <label for="google-search" class="material-icons-sharp search__bar--icon" >search</label>
+        <label for="google-search" class="m-search-icon" >
+          <span class="material-icons-sharp">search</span>
+        </label>
         <!-- ??? If the "I'm Feeling Lucky" still works when the <input> is empty <input required="required">? -->
-        <input class="search__bar--input" type="search" id="google-search" placeholder=" " autofocus>
+        <input class="m-searchbar__input" type="search" id="google-search" placeholder=" " autofocus>
         <!-- cant find colored icon from google licensed sites -->
         <!-- title will be replaced with a css tooltip later on -->
         <!-- I am assuming this button does "stuff" in the overlay it shows, and the result of that "stuff" gets pasted into the input and submitted-->
-        <button class="search__bar--icon btn m-voice-search" title="Search by voice">
-         <span class="material-icons-sharp">mic</span>
+        <button class="m-btn m-voice-search" title="Search by voice">
+          <span class="material-icons-sharp">mic</span>
         </button>
       </div>
-      <div class="search__btn--row">
-        <button class="btn"> Google Search</button>
-        <button class="btn"> I'm Feeling Lucky</button>
+      <div class="l-flex-row">
+        <button class="m-btn"> Google Search</button>
+        <button class="m-btn"> I'm Feeling Lucky</button>
       </div>
     </form>
-    <div class="localization">Google offered in: <a href="">Italiano</a></div>
+    <!-- only show if locale != lang -->
+    <span class="m-conditionals">Google offered in: <a href="">Italiano</a></span>
   </main>
 
   <footer>
     <!-- ??? is there a geographic location HTML element? seaching returns olny JS geolocation stuff so im assuming its something i will encounter later on -->
-    <div class="location">Italy</div>
-    <nav class="foot__nav">
-      <nav class="foot__nav--business" >
-        <a class="foot__a" href="">Advertising</a>
-        <a class="foot__a" href="">Business</a>
-        <a class="foot__a" href="">How Search Works</a>
+    <div class="m-location">Italy</div>
+    <nav class="l-flex-row h-flex-wrap m-sub-nav">
+      <div class="l-flex-row m-carbon-free">
+        <a class="l-block h-text-no-decoration" href="">
+          <!-- !!! KEEP AS ONE LINE to avoid underline on new line character -->
+          <img class="m-carbon-free__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt=""><span class="foot__eco--text">Carbon neutral since 2007</span>
+        </a>
+      </div>
+      <nav class="l-flex-row m-sub-nav__left">
+        <a class="l-block h-text-no-decoration" href="">Advertising</a>
+        <a class="l-block h-text-no-decoration" href="">Business</a>
+        <a class="l-block h-text-no-decoration" href="">How Search Works</a>
       </nav>
-      <div class="foot__eco">
-        <a class="foot__a" href="">
-          <!-- ! KEEP AS ONE LINE to avoid underline on new line character -->
-          <img class="foot__eco--img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt=""><span class="foot__eco--text">Carbon neutral since 2007</span></a>
-      </div>
-      <div class="foot__nav--legal" lab>
-        <a class="foot__a" href="">Privacy</a>
-        <a class="foot__a" href="">Terms</a>
-        <a class="foot__a" href="">Settings</a>
-      </div>
+      <nav class="l-flex-row m-sub-nav__right">
+        <a class="l-block h-text-no-decoration" href="">Privacy</a>
+        <a class="l-block h-text-no-decoration" href="">Terms</a>
+        <a class="l-block h-text-no-decoration" href="">Settings</a>
+      </nav>
     </nav>
   </footer>
 </body>

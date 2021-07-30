@@ -1,3 +1,5 @@
+/*Base Elements */
+
 html {
   margin: 0px;
   padding: 0px;
@@ -21,6 +23,16 @@ header {
   white-space: normal;
 }
 
+footer {
+  font-size: small;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: lightgray;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+/* layouts .l-[class-name] */
+
 .l-flex-row {
   display: flex;
   flex-flow: row nowrap;
@@ -28,19 +40,24 @@ header {
   align-items: center;
 }
 
-.m-header {
-  margin: 0 0.5rem;
+.l-flex-col {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-a.m-header, a.m-footer {
-  text-decoration: none;
-}
-a.m-header:hover , a.m-footer:hover {
-  text-decoration: underline;
-}
-a.m-header:visited , a.m-footer:visited {
+.l-block {
+  padding: 1rem;
   color: inherit;
+  font-size: inherit;
+  display: block;
+  text-align: center;
+  max-width: max-content;
 }
+
+
+/* modules .m-[class-name] */
 
 .m-apps {
   color: #666;
@@ -59,114 +76,108 @@ a.m-header:visited , a.m-footer:visited {
   border-radius: 50%;
 }
 
-main , .search {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  margin: 1em;
-}
-
-.search__bar {
-  margin: 1em;
-  padding: 0 1em;
+.m-searchbar {
+  margin: 1rem 0;
+  padding: 0 1rem;
   max-width: 87vw;
-  color: #9ba0a5;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #999;
   border:1px solid #d7d7d7;
   /* radius formula = iconHeight/2 + iconPadding + borderWidth */
-  border-radius: 2rem;
+  border-radius: 2.1rem;
   border-radius: calc(1.5rem/2 + 0.5rem + 1px);
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
 }
-.search__bar:focus-within, .search__bar:hover {
+.m-searchbar:focus-within, .m-searchbar:hover {
   box-shadow: 0 0 5px lightgrey;
 }
-
-.search__bar--input {
-  font-size: inherit;
-  background-color: inherit;
-  margin: 5px 0 5px 1em;
+.m-searchbar__input {
+  margin: 5px 0 5px 1rem;
   padding: 0;
+  background-color: transparent;
+  font-size: inherit;
   align-self: stretch;
   flex: 1 1 auto;
-  width: 50ch;
+  width: 54ch;
   border: none;
   outline: none;
 }
 
-.search__btn--row {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+.m-conditionals {
+  margin: 1rem;
 }
 
-footer {
-  font-size: small;
-  color: rgba(0, 0, 0, 0.6);
-  background-color: lightgray;
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.location {
+.m-location {
+  font-size: larger;
   padding: 1em 2em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.foot__nav {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  margin: 0px 1rem;
-  justify-content: space-between;
+.m-sub-nav {
+  margin: 0 1rem;
 }
 
-.foot__a {
-  font-size: inherit;
-  color: inherit;
-  text-decoration: none;
-  padding: 1em;
-  display: block;
-  white-space: nowrap;
-  text-align: center;
-}
-.foot__a:hover {
-  text-decoration: underline;
-}
-
-.foot__nav--business, .foot__nav--legal {
-  /* set as the widest of the row in rem*/
-  min-width: 22rem;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+.m-sub-nav__left,
+.m-sub-nav__right {
+  /* set as >= of the widest of the two*/
+  min-width: 20rem;
   justify-content: flex-start;
 }
-
-.foot__nav--legal{
+.m-sub-nav__left {
+  order: 1;
   justify-content: flex-end;
 }
 
-.foot__eco {
+.m-carbon-free {
   margin: 0 auto;
+  order: 1;
 }
 
-.foot__eco--img{
-  height: 1em;
-  width: auto;
+.m-carbon-free__img{
+  height: auto;
+  width: 1em;
+  margin-right: 1ch;
 }
 
-/* max-width is widest times number of elements */
-@media screen and (max-width: 66rem) {
-  .foot__eco {
-    order: -1;
+
+/* helpers .h-[target]-[class-name] */
+
+.h-flex-wrap{
+  flex-wrap: wrap;
+}
+
+.h-margin-orizontal{
+  margin: 0 0.5rem;
+}
+
+.h-text-wrap{
+  white-space: normal;
+}
+
+.h-text-no-decoration,
+.h-text-no-decoration:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.h-text-no-decoration:hover {
+  text-decoration: underline;
+}
+
+
+/* Media Queries */
+
+/* max-width is widest times number of elements of the row */
+@media screen and (max-width: 60rem) {
+  .m-carbon-free {
+    order: 0;
     width: 100vw;
+    justify-content: center;
   }
-  .foot__nav--legal, .foot__nav--business {
-    min-width: max-content;
+  .m-sub-nav {
+    justify-content: space-evenly;
   }
-  .foot__nav {
-    justify-content: space-around;
+  .m-sub-nav__left,
+  .m-sub-nav__right {
+    justify-content: center;
+    margin: 0 auto;
   }
 }

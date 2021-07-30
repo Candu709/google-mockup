@@ -1,16 +1,36 @@
-html {
-    background: white;
-    color: #333;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: lighter;
-    font-size: medium;
-    line-height: normal;
-    font-stretch: normal;
-    font-family: Helvetica, Arial, sans-serif;
+/* Imported */
+
+/*   Icons class */
+.material-icons-sharp {
+  color: inherit;
+  font-size: inherit;
+  user-select: none;
+  display: inherit;
 }
-/* Buttons */
-.btn {
+
+
+/* Base elements*/
+
+html {
+  background: white;
+  color: #333;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  font-size: medium;
+  line-height: normal;
+  font-stretch: normal;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* Layouts .l-[class-name] */
+
+
+
+/* modules .m-[class-name] */
+
+.m-btn {
   margin: 1rem 0.5rem;
   padding: 0.5rem 1rem;
   border: 1px solid transparent;
@@ -22,29 +42,26 @@ html {
   white-space: nowrap;
   cursor: pointer;
 }
-.btn--primary {
+
+.m-btn--primary {
   padding: 0.5rem 1.5rem;
   background-color: hsl(215, 80%, 55%);
   color: white;
   outline: none;
 }
-.btn--primary:hover{
+.m-btn--primary:hover{
   background-color: hsl(215, 80%, 60%);
 }
-.btn--primary:active, .btn--primary:focus {
+.m-btn--primary:active,
+.m-btn--primary:focus {
   background-color: hsl(215, 80%, 65%);
 }
-/* Icons */
-.material-icons-sharp {
-  color: inherit;
-  font-size: inherit;
-  user-select: none;
-  display: inherit;
-}
+
 .m-search-icon {
   font-size: larger;
   padding: 0.5rem 0;
 }
+
 .m-voice-search {
   margin: 0;
   padding: 0.5rem 0;
@@ -52,3 +69,10 @@ html {
   color: inherit;
   font-size: x-large;
 }
+
+
+/* helpers .h-[target]-[class-name] */
+
+
+
+/* Media Queries */
