@@ -1,3 +1,5 @@
+/*Base Elements */
+
 html {
   margin: 0px;
   padding: 0px;
@@ -15,44 +17,47 @@ body {
   white-space: nowrap;
 }
 
-/* standard flex containers for the page */
+header {
+  font-size: small;
+  margin: 0.5rem 1rem;
+  white-space: normal;
+}
+
+footer {
+  font-size: small;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: lightgray;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+/* layouts .l-[class-name] */
+
 .l-flex-row {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
+
 .l-flex-col {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
 }
-.h-flex-wrap{
-  flex-wrap: wrap;
-}
 
-.h-margin-orizontal{
-  margin: 0 0.5rem;
-}
-.h-text-wrap{
-  white-space: normal;
-}
-
-.h-no-text-decoration,
-.h-no-text-decoration:visited {
+.l-block {
+  padding: 1rem;
   color: inherit;
-  text-decoration: none;
-}
-.h-no-text-decoration:hover {
-  text-decoration: underline;
+  font-size: inherit;
+  display: block;
+  text-align: center;
+  max-width: max-content;
 }
 
-header {
-  font-size: small;
-  margin: 0.5rem 1rem;
-  white-space: normal;
-}
+
+/* modules .m-[class-name] */
 
 .m-apps {
   color: #666;
@@ -101,28 +106,16 @@ header {
   margin: 1rem;
 }
 
-footer {
-  font-size: small;
-  color: rgba(0, 0, 0, 0.6);
-  background-color: lightgray;
-  background-color: rgba(0, 0, 0, 0.05);
-}
 .m-location {
   font-size: larger;
   padding: 1em 2em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.l-block {
-  font-size: inherit;
-  color: inherit;
-  padding: 1rem;
-  display: block;
-  text-align: center;
-  max-width: max-content;
-}
+
 .m-sub-nav {
   margin: 0 1rem;
 }
+
 .m-sub-nav__left,
 .m-sub-nav__right {
   /* set as >= of the widest of the two*/
@@ -138,11 +131,37 @@ footer {
   margin: 0 auto;
   order: 1;
 }
+
 .m-carbon-free__img{
   height: auto;
   width: 1em;
   margin-right: 1ch;
 }
+
+
+/* helpers .h-[class-name] */
+
+.h-flex-wrap{
+  flex-wrap: wrap;
+}
+.h-margin-orizontal{
+  margin: 0 0.5rem;
+}
+.h-text-wrap{
+  white-space: normal;
+}
+
+.h-no-text-decoration,
+.h-no-text-decoration:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.h-no-text-decoration:hover {
+  text-decoration: underline;
+}
+
+
+/* Media Queries */
 
 /* max-width is widest times number of elements of the row */
 @media screen and (max-width: 60rem) {
