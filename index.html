@@ -13,17 +13,17 @@
 <body>
   <header class="l-flex-row">
     <nav class="l-flex-row">
-      <a class="m-header" href="">Google Store</a>
-      <a class="m-header" href="">About Us</a>
+      <a class="m-header__element h-no-text-decoration" href="">About Us</a>
+      <a class="m-header__element h-no-text-decoration" href="">Google Store</a>
     </nav>
     <nav class="l-flex-row">
-      <a class="m-header" href="">Gmail</a>
-      <a class="m-header" href="">Images</a>
+      <a class="m-header__element h-no-text-decoration" href="">Gmail </a>
+      <a class="m-header__element h-no-text-decoration" href="">Images</a>
       <!-- title will be replaced with a css tooltip later on -->
-      <nav class="m-header m-apps" title="Google Apps">
+      <nav class="m-header__element m-apps" title="Google Apps">
         <span class="material-icons-sharp">apps</span>
       </nav>
-      <button class="m-header btn btn--primary">Sign in</button>
+      <button class="m-header__element btn btn--primary">Sign in</button>
     </nav>
   </header>
 
@@ -56,24 +56,25 @@
 
   <footer>
     <!-- ??? is there a geographic location HTML element? seaching returns olny JS geolocation stuff so im assuming its something i will encounter later on -->
-    <div class="location">Italy</div>
-    <nav class="foot__nav">
-      <nav class="foot__nav--business" >
-        <a class="foot__a" href="">Advertising</a>
-        <a class="foot__a" href="">Business</a>
-        <a class="foot__a" href="">How Search Works</a>
-      </nav>
-      <div class="foot__eco">
-        <a class="foot__a" href="">
+    <div class="m-location">Italy</div>
+    <nav class="l-flex-row h-flex-wrap m-sub-nav">
+      <div class="l-flex-row m-carbon-free">
+        <a class="l-block h-no-text-decoration" href="">
           <!-- ! KEEP AS ONE LINE to avoid underline on new line character -->
-          <img class="foot__eco--img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt=""><span class="foot__eco--text">Carbon neutral since 2007</span></a>
-        </div>
-        <div class="foot__nav--legal" lab>
-          <a class="foot__a" href="">Privacy</a>
-          <a class="foot__a" href="">Terms</a>
-          <a class="foot__a" href="">Settings</a>
-        </div>
+          <img class="m-carbon-free__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt=""><span class="foot__eco--text">Carbon neutral since 2007</span>
+        </a>
+      </div>
+      <nav class="l-flex-row m-sub-nav__left">
+        <a class="l-block h-no-text-decoration" href="">Advertising</a>
+        <a class="l-block h-no-text-decoration" href="">Business</a>
+        <a class="l-block h-no-text-decoration" href="">How Search Works</a>
       </nav>
-    </footer>
-  </body>
-  </html>
+      <nav class="l-flex-row m-sub-nav__right">
+        <a class="l-block h-no-text-decoration" href="">Privacy</a>
+        <a class="l-block h-no-text-decoration" href="">Terms</a>
+        <a class="l-block h-no-text-decoration" href="">Settings</a>
+      </nav>
+    </nav>
+  </footer>
+</body>
+</html>
