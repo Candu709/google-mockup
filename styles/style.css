@@ -23,6 +23,11 @@ header {
   white-space: normal;
 }
 
+main{
+  height: 100%;
+  padding-bottom: 1rem;
+}
+
 footer {
   font-size: small;
   color: rgba(0, 0, 0, 0.6);
@@ -77,7 +82,6 @@ footer {
 }
 
 .m-searchbar {
-  margin: 1rem 0;
   padding: 0 1rem;
   max-width: 87vw;
   background-color: rgba(255, 255, 255, 0.75);
@@ -102,8 +106,16 @@ footer {
   outline: none;
 }
 
+.m-logo {
+  justify-content: flex-end;
+  min-height: 92px;
+  max-height: 290px;
+  height: 35%;
+  /* height: calc(100% - 560px); */
+  flex: 0 0 auto;
+}
 .m-conditionals {
-  margin: 1rem;
+  flex: 1 0 auto;
 }
 
 .m-location {
@@ -113,7 +125,7 @@ footer {
 }
 
 .m-sub-nav {
-  margin: 0 1rem;
+  padding: 0 1rem;
 }
 
 .m-sub-nav__left,
@@ -147,6 +159,10 @@ footer {
 
 .h-margin-orizontal{
   margin: 0 0.5rem;
+}
+
+.h-margin-vertical{
+  margin: 1rem 0;
 }
 
 .h-text-wrap{
