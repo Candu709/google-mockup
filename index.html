@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
+<body class="">
   <header class="l-flex-row">
     <nav class="l-flex-row">
       <a class="h-margin-orizontal h-text-wrap h-text-no-decoration" href="">About Us</a>
@@ -27,20 +27,17 @@
     </nav>
   </header>
 
-  <main class="l-flex-col">
-    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" height="92px" width="272px" alt="Google">
-    <!-- ??? does this not need the alt since its a logo or does it need it since its the main image of the page?-->
+  <main>
+    <div class="l-flex-col m-logo">
+      <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" height="92px" width="272px" alt="Google">
+    </div>
     <form action="" class="l-flex-col">
-      <div class="l-flex-row m-searchbar">
-        <!-- ??? Does this spell out "search" on a screen reader? Should I get a screen reader for testing or is the chrome accessibility lightouse test in the devs tool enough? -->
+      <div class="l-flex-row m-searchbar h-margin-vertical">
         <label for="google-search" class="m-search-icon" >
           <span class="material-icons-sharp">search</span>
         </label>
-        <!-- ??? If the "I'm Feeling Lucky" still works when the <input> is empty <input required="required">? -->
         <input class="m-searchbar__input" type="search" id="google-search" placeholder=" " autofocus>
-        <!-- cant find colored icon from google licensed sites -->
         <!-- title will be replaced with a css tooltip later on -->
-        <!-- I am assuming this button does "stuff" in the overlay it shows, and the result of that "stuff" gets pasted into the input and submitted-->
         <button class="m-btn m-voice-search" title="Search by voice">
           <span class="material-icons-sharp">mic</span>
         </button>
@@ -50,12 +47,13 @@
         <button class="m-btn"> I'm Feeling Lucky</button>
       </div>
     </form>
-    <!-- only show if locale != lang -->
-    <span class="m-conditionals">Google offered in: <a href="">Italiano</a></span>
+    <div class="l-flex-col m-contitionals">
+      <!-- only show if locale != lang -->
+      <span class="h-margin-vertical">Google offered in: <a href="">Italiano</a></span>
+    </div>
   </main>
 
   <footer>
-    <!-- ??? is there a geographic location HTML element? seaching returns olny JS geolocation stuff so im assuming its something i will encounter later on -->
     <div class="m-location">Italy</div>
     <nav class="l-flex-row h-flex-wrap m-sub-nav">
       <div class="l-flex-row m-carbon-free">
