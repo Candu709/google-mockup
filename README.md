@@ -22,7 +22,7 @@ The main objectives are to practice:
 Early in the project i was pointed out to modular CSS by one of the maintener of the [TOP Discord](), after some brief research about it i tried to implement some of the principles that i found.
 
 ### No CSS reset/normalize
-I avoided using a CSS reset sheet becouse I felt it could fix something that I didnt know or fully understand yet without teaching me much about it.
+I avoided using a CSS reset sheet becouse while it could speed up the process in a small project like this I felt it could fix something that I didnt know or fully understand yet without teaching me much about it.
 
 ### Localization
 By default I am redirected from google.com to google.it, I decided to recreate this localized version as it has some additional elements (the google store links and the [carbon free banner](#carbon-free-banner) in the footer) that are interesting to place, but translating the texts into English for easier understanding when requesting feedback.  
