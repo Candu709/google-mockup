@@ -19,10 +19,10 @@ The main objectives are to practice:
 ## Development Notes
 
 ### CSS Naming Conventions
-Early in the project i was pointed out to modular CSS by one of the maintener of the [TOP Discord](), after some brief research about it i tried to implement some of the principles that i found.
+Early in the project i was pointed out to Modular CSS by one of the maintener of the [TOP Discord](). After some brief research, I tried to implement a naming convention following the guidelines from OOCSS, BEM and SMACSS. I later added comments on top of each section both as a reminder and for easier navigation through the list.
 
 ### No CSS reset/normalize
-I avoided using a CSS reset sheet becouse while it could speed up the process in a small project like this I felt it could fix something that I didnt know or fully understand yet without teaching me much about it.
+I avoided using a CSS reset sheet becouse while I realize it could speed up the development in a small project like this, I also felt it could fix something that I didnt know or fully understand yet without teaching me much about it.
 
 ### Localization
 By default I am redirected from google.com to google.it, I decided to recreate this localized version as it has some additional elements (the google store links and the [carbon free banner](#carbon-free-banner) in the footer) that are interesting to place, but translating the texts into English for easier understanding when requesting feedback.  
