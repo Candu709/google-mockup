@@ -92,7 +92,7 @@ footer {
   border-radius: calc(1.5rem/2 + 0.5rem + 1px);
 }
 .m-searchbar:focus-within, .m-searchbar:hover {
-  box-shadow: 0 0 5px lightgrey;
+  box-shadow: 0 1px 5px #3333;
 }
 .m-searchbar__input {
   margin: 5px 0 5px 1rem;
