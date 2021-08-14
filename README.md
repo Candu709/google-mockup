@@ -40,11 +40,11 @@ I experimented giving the footer elements colors that are mostly transparent but
 I am aware that it could also present a possible visibility issue if a dark bagkround is selected, but since right now its only possible trough editing css  I left it in and i might expand upon it after learning more ways to dynamically edit a webpage.
 
 ### Carbon free banner
-On large viewports this element is orizzontally centered relative to the page and  its siblings are supposed to go either side of the viewport.\
+On large viewports this element is horizontally centered relative to the page and  its siblings are supposed to go either side of the viewport.\
 My first tought was to give the parent element the `justify-content: space-between;` property, but since the siblings elements have different widths the remaining space, along with the banner, ends up being offeset to the center of the page.\
 To fix this i then set both the sibling elements to a fixed width that is >= of the widest of the two, ensuring that the leftover space is always centered to the page and the banner is placed at the center of that.\
 On smaller viewports the banner its displayed above its sibling, wich in turn have a gap between them and the edges of the viewport.\
 To reproduce this I added a media query that
-modifies the `order` property of the elements to move it before its siblings, 
+modifies the `order` property of the elements to place it before its siblings, 
 and then
 sets the width of the banner to the same as the viewport, exploiting the `flex-wrap` property of the parent element to place itself in its own row.
