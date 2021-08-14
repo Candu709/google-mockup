@@ -48,3 +48,5 @@ To reproduce this I added a media query that
 modifies the `order` property of the elements to place it before its siblings, 
 and then
 sets the width of the banner to the same as the viewport, exploiting the `flex-wrap` property of the parent element to place itself in its own row.
+
+### Searchbar border radius
